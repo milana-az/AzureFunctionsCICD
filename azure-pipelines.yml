@@ -6,7 +6,7 @@ steps:
 - script: dotnet build 'FunctionApp1.sln' --configuration 'Release'
   displayName: 'Build solution'
      
-- script: dotnet test 'XUnitTestProject1' --configuration 'Release' --logger trx
+- script: dotnet test 'XUnitTestProject' --configuration 'Release' --logger trx
   displayName: 'Run unit tests'
  
 - task: PublishTestResults@2
