@@ -22,3 +22,11 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)/app'
     artifactName: app
+  
+trigger:
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/old*
